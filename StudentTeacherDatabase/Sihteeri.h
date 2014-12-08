@@ -5,7 +5,7 @@ class Sihteeri :
 {
 public:
 	Sihteeri();
-	Sihteeri(string, string, string, string, string, double, string);
+	Sihteeri(string, string, string, string, string, string, string);
 	Sihteeri(const Sihteeri &);
 	~Sihteeri();
 

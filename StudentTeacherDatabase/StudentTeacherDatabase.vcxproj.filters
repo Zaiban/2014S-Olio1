@@ -39,6 +39,9 @@
     <ClCompile Include="Tyontekija.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Sovellus.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Henkilo.h">
@@ -60,6 +63,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Tyontekija.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Sovellus.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

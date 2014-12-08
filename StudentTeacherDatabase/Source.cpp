@@ -1,23 +1,13 @@
-#include "Koulu.h"
+#include "Sovellus.h"
 #include <iostream>
 
 using std::cout; using std::endl;
 
 int main()
 {
+	Sovellus sovellus;
 
-	Koulu tamkki;
-	
-	tamkki.addStudyProgram();
-	tamkki.addStudyProgram();
-
-	tamkki.addStudentToStudyProgram();
-	tamkki.addStudentToStudyProgram();
-
-	tamkki.printStudyPrograms();
-	tamkki.printStudyProgramCount();
-
-	tamkki.printStudyProgramStudents();
+	sovellus.aja();
 
 	system("pause");
 	return 0;

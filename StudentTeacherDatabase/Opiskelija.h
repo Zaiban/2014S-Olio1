@@ -5,7 +5,7 @@ class Opiskelija :
 {
 public:
 	Opiskelija();
-	Opiskelija(string, string, string, string, string);
+	Opiskelija(string firstName, string address, string phoneNumber, string lastName, string studentNumber);
 	Opiskelija(const Opiskelija &);
 	~Opiskelija();
 	Opiskelija& operator=(const Opiskelija &);

@@ -4,25 +4,20 @@ using std::cout; using std::endl; using std::cin;
 
 Henkilo::Henkilo() : firstName_(""), address_(""), phoneNumber_(""), lastName_("")
 {
-	cout << "Henkilo: def. constructor" << endl;
 }
 Henkilo::Henkilo(string firstName, string address, string phoneNumber, string lastName) :
 	firstName_(firstName), address_(address), phoneNumber_(phoneNumber), lastName_(lastName)
 {
-	cout << "Henkilo: par. constructor" << endl;
 }
 Henkilo::Henkilo(const Henkilo &org) :
 	firstName_(org.firstName_), address_(org.address_), phoneNumber_(org.phoneNumber_), lastName_(org.lastName_)
 {
-	cout << "Henkilo: copy" << endl;
 }
 Henkilo::~Henkilo()
 {
-	cout << "Henkilo: destructor" << endl;
 }
 Henkilo& Henkilo::operator= (const Henkilo &source)
 {
-	cout << "Henkilo: assignment" << endl;
 	if (this != &source)
 	{
 		firstName_ = source.firstName_;
@@ -67,15 +62,14 @@ void Henkilo::setLastName(string lastName)
 
 void Henkilo::askFields()
 {
-	cin.ignore();
 	cout << "Type first name? ";
-	getline(cin, firstName_);
+	std::getline(cin, firstName_);
 	cout << "Type address? ";
-	getline(cin, address_);
+	std::getline(cin, address_);
 	cout << "Type phone number? ";
-	getline(cin, phoneNumber_);
+	std::getline(cin, phoneNumber_);
 	cout << "Type last name? ";
-	getline(cin, lastName_);
+	std::getline(cin, lastName_);
 }
 void Henkilo::print() const
 {

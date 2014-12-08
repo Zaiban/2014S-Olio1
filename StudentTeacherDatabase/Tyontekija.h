@@ -5,20 +5,20 @@ class Tyontekija :
 {
 public:
 	Tyontekija();
-	Tyontekija(string, string, string, string, string, double);
+	Tyontekija(string, string, string, string, string, string);
 	Tyontekija(const Tyontekija &);
 	~Tyontekija();
 	Tyontekija& operator=(const Tyontekija &);
 
 	string getIdentifier() const;
-	double getSalary() const;
+	string getSalary() const;
 	void setIdentifier(string);
-	void setSalary(double);
+	void setSalary(string);
 
 	void askFields();
 	void print() const;
 private:
 	string identifier_;
-	double salary_;
+	string salary_;
 };
 

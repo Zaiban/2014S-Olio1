@@ -4,25 +4,20 @@ using std::cout; using std::endl; using std::cin;
 
 Opettaja::Opettaja() : Tyontekija(), fieldOfTeaching_("")
 {
-	cout << "Opettaja: def. constructor" << endl;
 }
-Opettaja::Opettaja(string firstName, string address, string phoneNumber, string lastName, string identifier, double salary, string fieldOfTeaching) :
+Opettaja::Opettaja(string firstName, string address, string phoneNumber, string lastName, string identifier, string salary, string fieldOfTeaching) :
 	Tyontekija(firstName, address, phoneNumber, lastName, identifier, salary), fieldOfTeaching_(fieldOfTeaching)
 {
-	cout << "Opettaja: par. constructor" << endl;
 }
 Opettaja::Opettaja(const Opettaja &org) :
 Tyontekija(org), fieldOfTeaching_(org.fieldOfTeaching_)
 {
-	cout << "Opettaja: copy" << endl;
 }
 Opettaja::~Opettaja()
 {
-	cout << "Opettaja: destructor" << endl;
 }
 Opettaja& Opettaja::operator=(const Opettaja &source)
 {
-	cout << "Opettaja: assignment" << endl;
 	if (this != &source)
 	{
 		Tyontekija::operator= (source);

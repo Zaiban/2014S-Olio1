@@ -4,25 +4,20 @@ using std::cout; using std::endl; using std::cin;
 
 Opiskelija::Opiskelija() : Henkilo(), studentNumber_("")
 {
-	cout << "Opiskelija: def. constructor" << endl;
 }
 Opiskelija::Opiskelija(string firstName, string address, string phoneNumber, string lastName, string studentNumber) : 
 	Henkilo(firstName, address, phoneNumber, lastName), studentNumber_(studentNumber)
 {
-	cout << "Opiskelija: par. constructor" << endl;
 }
 Opiskelija::Opiskelija(const Opiskelija &org) :
 Henkilo(org), studentNumber_(org.studentNumber_)
 {
-	cout << "Opiskelija: copy" << endl;
 }
 Opiskelija::~Opiskelija()
 {
-	cout << "Opiskelija: destructor" << endl;
 }
 Opiskelija& Opiskelija::operator=(const Opiskelija &source)
 {
-	cout << "Opiskelija: assignment" << endl;
 	if (this != &source)
 	{
 		Henkilo::operator= (source);

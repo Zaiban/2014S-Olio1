@@ -5,7 +5,7 @@ class Opettaja :
 {
 public:
 	Opettaja();
-	Opettaja(string, string, string, string, string, double, string);
+	Opettaja(string firstName, string address, string phoneNumber, string lastName, string identifier, string salary, string fieldOfTeaching);
 	Opettaja(const Opettaja &);
 	~Opettaja();
 	Opettaja& operator=(const Opettaja &);
